@@ -24,9 +24,6 @@ public class ReconciliateOrganizationsEngine {
         try {
                     this.prop = prop;
                     logger.debug("Initializing dbManager");
-                 //   String qry = prop.getProperty("exampleQuery");
-                    
-                   // logger.info(qry);
                     this.dbManager = new DBManager(this.prop);
 
                     this.dbManager.logUsers();
@@ -41,7 +38,7 @@ public class ReconciliateOrganizationsEngine {
                         try {
                             dbManager.closeConnections();
                         } catch (DBConnectionException e) {
-                            //ignore
+                            
                         }
                     }
                 }

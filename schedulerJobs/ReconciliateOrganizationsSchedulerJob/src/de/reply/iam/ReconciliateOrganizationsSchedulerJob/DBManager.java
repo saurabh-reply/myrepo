@@ -15,10 +15,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
-//import java.util.logging.Logger;
-
-//import jdk.internal.instrumentation.Logger;
-
 import oracle.iam.platform.Platform;
 
 public class DBManager {
@@ -41,15 +37,11 @@ public class DBManager {
         
     }
 
- //  public List<UserToGetNewLineManager> getNewLineManager() throws SQLException, DBConnectionException  {
- //       String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
-  //      List<UserToGetNewLineManager> userToGetNewLineManager = new LinkedList<UserToGetNewLineManager>();
-    
+     
     public void logUsers ()throws SQLException, DBConnectionException{
         PreparedStatement prepared_statement = oimDBConnection.prepareStatement(prop.getProperty("exampleQuery"));
        String qry = prop.getProperty("exampleQuery");
-     // logger.info(qry + "::" + "Getting Line Manager to be assigned ...");
-        ResultSet rs = prepared_statement.executeQuery(qry);
+         ResultSet rs = prepared_statement.executeQuery(qry);
         while (rs.next()) {
           
             

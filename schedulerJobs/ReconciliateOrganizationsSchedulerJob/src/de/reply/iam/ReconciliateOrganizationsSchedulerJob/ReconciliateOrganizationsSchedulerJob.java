@@ -36,7 +36,6 @@ public class ReconciliateOrganizationsSchedulerJob extends TaskSupport {
     public void execute(HashMap options)throws Exception {
         
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
-      //  long startTimestamp = new Date().getTime();
         logger.info("ReconciliateOrganizationsSchedulerJob started.");
         /* Read Schedule Job Parameters */
         String filePath = (String) options.get("filePath");;
