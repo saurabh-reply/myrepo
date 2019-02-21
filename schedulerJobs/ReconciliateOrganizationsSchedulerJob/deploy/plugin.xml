@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oimplugins>
+<plugins pluginpoint="oracle.iam.scheduler.vo.TaskSupport">
+<plugin pluginclass="de.reply.iam.ReconciliateOrganizationsSchedulerJob.ReconciliateOrganizationsSchedulerJob" version="1.0" name="ReconciliateOrganizationsSchedulerJob"/>
+</plugins>
+</oimplugins>

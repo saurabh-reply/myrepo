@@ -1,0 +1,12 @@
+<scheduledTasks xmlns="http://xmlns.oracle.com/oim/scheduler">
+    <task>
+        <name>ReconciliateOrganizationsSchedulerJob</name>
+        <class>de.reply.iam.ReconciliateOrganizationsSchedulerJob.ReconciliateOrganizationsSchedulerJob</class>
+        <description>ReconciliateOrganizationsSchedulerJob</description>
+        <retry>5</retry>
+        <parameters>
+            <string-param required="true" helpText="Property path">filePath</string-param>
+      <!--      <boolean-param required="true" helpText="Reconcile Parent Organizations">Reconcile Parent Organizations</boolean-param> -->
+        </parameters>
+    </task>
+</scheduledTasks>
